@@ -116,3 +116,7 @@ log4j = {
 
 
 app.companyName = "atpl"
+// Added by the Spring Security Core plugin:
+grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.User'
+grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.UserRole'
+grails.plugins.springsecurity.authority.className = 'com.Role'

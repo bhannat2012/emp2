@@ -1,9 +1,11 @@
 package com
 
 import grails.transaction.Transactional
+import org.springframework.security.access.annotation.Secured
 
 import static org.springframework.http.HttpStatus.*
 
+@Secured(['ROLE_ADMIN'])
 @Transactional(readOnly = true)
 class EmployeeController {
 
