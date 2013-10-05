@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<div class="container">
+<div class="container  jumbotron">
 
     <form class="form-signin">
         <h2 class="form-signin-heading">Please sign in</h2>
