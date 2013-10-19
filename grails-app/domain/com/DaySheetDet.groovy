@@ -3,10 +3,10 @@ package com
 import org.joda.time.DateTime
 
 class DaySheetDet {
-    DaySheet daySheet
     Integer inOutFlag
-    DateTime time
+    Date time
     static constraints = {
+        //time.time
     }
 
 }

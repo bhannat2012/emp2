@@ -5,7 +5,7 @@ import org.joda.time.DateTime
 
 class Employee {
     String fName, lName, mName, add1, add2, city, phone, mobile, email, code, cardCode
-    DateTime dob, doj
+    Date dob, doj
     Boolean isResigned
     List<EmployeeLeave> leaves
     SexEnum sex
@@ -26,8 +26,8 @@ class Employee {
         email size: 0..50, email: true
         code size: 0..50
 
-        dob max: DateTime.now().minusYears(18), min: DateTime.now().minusYears(100), nullable: true
-        doj max: DateTime.now(), nullable: true
+        dob max: DateTime.now().minusYears(18).toDate(), min: DateTime.now().minusYears(100).toDate(), nullable: true
+        doj max: DateTime.now().toDate(), nullable: true
 
         leaves()
         sex()
